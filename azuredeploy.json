@@ -11,10 +11,10 @@
             "East Asia",
             "Southeast Asia"
           ],
-          "defaultValue": "West US",
           "metadata": {
             "description": "Location of resources"
-          }
+          },
+          "defaultValue": "West US"
         },
         "newStorageAccountName": {
             "type": "string",
