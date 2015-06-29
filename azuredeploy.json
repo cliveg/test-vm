@@ -4,16 +4,17 @@
     "parameters": {
         "location": {
             "type": "string",
-            "allowedValues": [
-                "West US",
-                "East US",
-                "West Europe",
-                "East Asia",
-                "Southeast Asia"
-            ],
-            "metadata": {
-                "description": "Location of resources"
-            }
+          "allowedValues": [
+            "West US",
+            "East US",
+            "West Europe",
+            "East Asia",
+            "Southeast Asia"
+          ],
+          "defaultValue": "West US",
+          "metadata": {
+            "description": "Location of resources"
+          }
         },
         "newStorageAccountName": {
             "type": "string",
@@ -23,20 +24,20 @@
         },
         "storageAccountType": {
             "type": "string",
-            "defaultValue": "Standard_LRS",
+            "defaultValue": "Premium_LRS",
             "metadata": {
                 "description": "Type of the Storage Account"
             }
         },
         "vmName": {
-            "type": "string",
+          "type": "string",
             "metadata": {
-                "description": "Name of the VM"
+              "description": "Name of the VM"
             }
         },
         "vmSize": {
             "type": "string",
-            "defaultValue": "Standard_A2",
+            "defaultValue": "Standard_D2",
             "metadata": {
                 "description": "Size of the VM"
             }
@@ -54,20 +55,22 @@
             }
         },
         "adminUsername": {
-            "type": "string",
+          "type": "string",
+          "defaultValue": "AzAdmin",
             "metadata": {
                 "description": "Admin username"
             }
         },
         "adminPassword": {
-            "type": "securestring",
+          "type": "securestring",
+          "defaultValue": "AzP@ssword1",
             "metadata": {
                 "description": "Admin password"
             }
         },
         "modulesUrl": {
             "type": "string",
-            "defaultValue": "https://github.com/Azure/azure-quickstart-templates/raw/master/dsc-extension-iis-server-windows-vm/ContosoWebsite.ps1.zip",
+            "defaultValue": "https://github.com/CliveG/test-vm/raw/simple-iisserver/ContosoWebsite.ps1.zip",
             "metadata": {
                 "description": "URL for the DSC configuration module. NOTE: Can be a Github url(raw) to the zip file"
             }
