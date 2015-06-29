@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "newStorageAccountName": {
+      "value": "deletecliveg1"
+    },
+    "location": {
+      "value": "West US"
+    },
+    "vmName": {
+      "value": "deletecliveg1"
+    },
+    "vmSize": {
+      "value": "Standard_D1"
+    },
+    "imageSKU": {
+      "value": "2012-R2-Datacenter"
+    },
+    "adminUsername": {
+      "value": "AzAdmin"
+    },
+    "adminPassword": {
+      "value": "AzP@ssword1"
+    },
+    "modulesUrl": {
+      "value": "https://github.com/CliveG/test-vm/raw/simple-iis-server/ContosoWebsite.ps1.zip"
+    },
+    "configurationFunction": {
+      "value": "ContosoWebsite.ps1\\ContosoWebsite"
+    }
+  }
+}
