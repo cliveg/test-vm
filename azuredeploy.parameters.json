@@ -24,7 +24,7 @@
       "value": "AzP@ssword1"
     },
     "modulesUrl": {
-      "value": "https://github.com/CliveG/test-vm/raw/simple-iis-server/ContosoWebsite.ps1.zip"
+      "value": "https://github.com/CliveG/test-vm/raw/simple-iisserver/ContosoWebsite.ps1.zip"
     },
     "configurationFunction": {
       "value": "ContosoWebsite.ps1\\ContosoWebsite"
