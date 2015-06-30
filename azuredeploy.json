@@ -37,7 +37,7 @@
         },
         "vmSize": {
             "type": "string",
-            "defaultValue": "Standard_D2",
+            "defaultValue": "Standard_DS2",
             "metadata": {
                 "description": "Size of the VM"
             }
@@ -70,7 +70,7 @@
         },
         "modulesUrl": {
             "type": "string",
-            "defaultValue": "https://github.com/CliveG/test-vm/raw/simple-iisserver/AppInstall.ps1.zip",
+            "defaultValue": "https://github.com/CliveG/test-vm/raw/simple-iisserver/ContosoWebsite.ps1.zip",
             "metadata": {
                 "description": "URL for the DSC configuration module. NOTE: Can be a Github url(raw) to the zip file"
             }
@@ -205,13 +205,13 @@
         "properties": {
             "publisher": "Microsoft.Powershell",
             "type": "DSC",
-            "typeHandlerVersion": "2.0",
+            "typeHandlerVersion": "1.9",
             "settings": {
                 "ModulesUrl": "[parameters('modulesUrl')]",
                 "SasToken": "",
                 "ConfigurationFunction": "[parameters('configurationFunction')]",
-            "Properties": {
-                "MachineName": "[parameters('vmName')]"
+                "Properties": {
+                    "MachineName": "[parameters('vmName')]"
                 }
             },
             "protectedSettings": null
