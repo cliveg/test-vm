@@ -77,7 +77,7 @@
         },
         "configurationFunction": {
             "type": "string",
-            "defaultValue": "AppInstall.ps1\\AppInstall",
+            "defaultValue": "ContosoWebsite.ps1\\ContosoWebsite",
             "metadata": {
                 "description": "DSC configuration function to call"
             }
