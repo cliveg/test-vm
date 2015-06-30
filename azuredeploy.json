@@ -210,8 +210,8 @@
                 "ModulesUrl": "[parameters('modulesUrl')]",
                 "SasToken": "",
                 "ConfigurationFunction": "[parameters('configurationFunction')]",
-                "Properties": {
-                    "MachineName": "[parameters('vmName')]"
+            "Properties": {
+                "MachineName": "[parameters('vmName')]"
                 }
             },
             "protectedSettings": null
