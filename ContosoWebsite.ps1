@@ -3,7 +3,7 @@ Configuration ContosoWebsite
   param ($MachineName)
 
 	Enable-CredSSPNTLM -DomainName $MachineName
-	Import-DscResource -ModuleName xComputerManagement, xActiveDirectory, xDisk, xCredSSP, cDisk, xNetworking, xIEEsc
+	Import-DscResource -ModuleName xComputerManagement, xActiveDirectory, xDisk, xCredSSP, cDisk, xNetworking, xSystemSecurity
 
   Node ($MachineName)
   {
