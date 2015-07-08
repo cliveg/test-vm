@@ -1,7 +1,7 @@
 {
-  "itemDisplayName": "IIS Server using DSC extension on a Windows VM",
-  "description": "This template creates a Windows VM and sets up an IIS server using the DSC extension. NOTE: The DSC configuration module needs a SAS token to be passed in if you're using Azure Storage. For DSC module link from Github (default in this template), this is not needed.",
-  "summary": "This template creates a VM with IIS server using DSC extension",
-  "githubUsername": "cliveg",
-  "dateUpdated": "2015-07-28"
+	"itemDisplayName": "Create a Three VM Skype for Business Deployment",
+	"description": "This template creates three new Azure VMs, each with a public IP address and load balancer and a VNet, it configures one VM to be an AD DC for a new Forest and Domain, one with SQL Server domain joined and a third VM with a Skpye for Business Enterprise Pool, all VMs have public facing RDP",
+	"summary": "This template creates a Skype for Business pool",
+	"githubUsername": "cliveg",
+	"dateUpdated": "2015-06-27"
 }
