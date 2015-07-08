@@ -12,9 +12,6 @@ configuration Server1
 
         [Parameter(Mandatory)]
         [System.Management.Automation.PSCredential]$Admincreds,
-
-        [parameter(Mandatory)]
-        [String]$DatabaseServer,
       
         [Int]$RetryCount=30,
         [Int]$RetryIntervalSec=60
