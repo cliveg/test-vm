@@ -297,8 +297,8 @@
 		"nicUpdate": "[concat(parameters('AssetLocation'),'/nicUpdate.json')]",
 		"adModulesURL": "[concat(parameters('AssetLocation'),'/CreateADPDC.ps1.zip')]",
 		"adConfigurationFunction": "CreateADPDC.ps1\\CreateADPDC",
-		"spModulesURL": "[concat(parameters('AssetLocation'),'/ConfigureServer1.ps1.zip')]",
-		"spConfigurationFunction": "ConfigureServer1.ps1\\ConfigureServer1"
+    "spModulesURL": "[concat(parameters('AssetLocation'),'/Server1.ps1.zip')]",
+		"spConfigurationFunction": "Server1.ps1\\Server1"
 	},
 	"resources": [
 		{
