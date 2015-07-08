@@ -105,7 +105,7 @@ configuration Server1
                 DomainUserCredential= $DomainCreds
                 RetryCount = $RetryCount 
                 RetryIntervalSec = $RetryIntervalSec 
-                DependsOn = "[WindowsFeature]Server-Media-Foundation"      
+                DependsOn = "[WindowsFeature]RSAT-ADDS"      
             }
             xComputer DomainJoin
             {
