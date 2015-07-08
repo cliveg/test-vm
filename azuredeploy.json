@@ -653,9 +653,7 @@
       "dependsOn": [
         "[resourceId('Microsoft.Storage/storageAccounts',parameters('newStorageAccountName'))]",
         "[resourceId('Microsoft.Network/networkInterfaces',variables('spNicName'))]",
-        "[resourceId('Microsoft.Compute/availabilitySets', variables('spAvailabilitySetName'))]",
-        "Microsoft.Resources/deployments/UpdateVNetDNS",
-        "[concat('Microsoft.Compute/virtualMachines/', parameters('adVMName'),'/extensions/InstallDomainController')]"
+        "[resourceId('Microsoft.Compute/availabilitySets', variables('spAvailabilitySetName'))]"
       ],
       "location": "[parameters('location')]",
       "name": "[parameters('spVMName')]",
@@ -710,11 +708,12 @@
       "resources": [
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('spVMName'),'/ConfigureSPServer')]",
+          "name": "[concat(parameters('spVMName'),'/Server1')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[parameters('location')]",
           "dependsOn": [
-            "[concat('Microsoft.Compute/virtualMachines/', parameters('spVMName'))]"
+            "[concat('Microsoft.Compute/virtualMachines/', parameters('spVMName'))]",
+            "Microsoft.Resources/deployments/UpdateVNetDNS"
           ],
           "properties": {
             "publisher": "Microsoft.Powershell",
