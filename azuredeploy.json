@@ -653,7 +653,8 @@
       "dependsOn": [
         "[resourceId('Microsoft.Storage/storageAccounts',parameters('newStorageAccountName'))]",
         "[resourceId('Microsoft.Network/networkInterfaces',variables('spNicName'))]",
-        "[resourceId('Microsoft.Compute/availabilitySets', variables('spAvailabilitySetName'))]"
+        "[resourceId('Microsoft.Compute/availabilitySets', variables('spAvailabilitySetName'))]",
+        "Microsoft.Resources/deployments/UpdateVNetDNS"
       ],
       "location": "[parameters('location')]",
       "name": "[parameters('spVMName')]",
