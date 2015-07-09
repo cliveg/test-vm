@@ -13,7 +13,7 @@ configuration Server1
         [Parameter(Mandatory)]
         [System.Management.Automation.PSCredential]$Admincreds,
       
-        [Int]$RetryCount=30,
+        [Int]$RetryCount=60,
         [Int]$RetryIntervalSec=60
 
 			#region Variables
